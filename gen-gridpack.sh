@@ -22,11 +22,17 @@ elif [ $cmssw_version != $parent_dir_name ]; then
 else
 	echo "Parent directory matches declared CMSSW version. Proceeding."
 fi
- 
+
 config_in_filename="$run-fragment.py"
 config_out_filename="../gen-output-configs/$run-$cmssw_version-n$nevents-1_cfg.py"
 root_out_filename="../gen-output-files/$run-$cmssw_version-n$nevents.root"
 debug_out_filename="../text-logs/$run-$cmssw_version-n$nevents.debug"
+
+if [[ ! -z $(grep -F "$cmssw_version" "src/Configuration/GenProduction/python/$config_in_filename") ]]; then
+	echo "Gridpack CMSSW version matches declared CMSSSW version."
+else
+	echo "gridpack CMSSW version does not match declared CMSSW version. Exiting."
+fi 
 
 echo "Storing log file in $debug_out_filename"
 echo "Setting up cmsenv"
