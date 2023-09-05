@@ -1,5 +1,5 @@
 nohup: ignoring input
-%MSG-w CondDBESSource:  (NoModuleName) 01-Sep-2023 23:47:55 CEST pre-events
+%MSG-w CondDBESSource:  (NoModuleName) 02-Sep-2023 22:52:42 CEST pre-events
 Plugin for Record PGeometricDetExtraRcd has not been found.
 %MSG
    ______________________________________     
@@ -87,7 +87,7 @@ DONE
 write ./events.lhe.gz
 run 1 finished, total number of produced events: 100/100
 
--rw-r--r--. 1 masizemo zh 29280 Sep  1 23:53 events_1.lhe.gz
+-rw-r--r--. 1 masizemo zh 29280 Sep  2 22:57 events_1.lhe.gz
 run finished, produced number of events:
 100
 ~/hscp/GENrecipie/mg-Rhadron_mGl/CMSSW_12_4_8/lheevent/process/madevent ~/hscp/GENrecipie/mg-Rhadron_mGl/CMSSW_12_4_8/lheevent
@@ -123,7 +123,7 @@ madevent>INFO: Running Systematics computation
 [1;34mThe parameter etaonium is not supported anymore this parameter will be ignored.[0m
 INFO: # events generated with PDF: NNPDF31_nnlo_as_0118_mc_hessian_pdfas (325300) 
 INFO: #Will Compute 926 weights per event. 
-INFO: # currently at event 0 [elapsed time: 0.042 s] 
+INFO: # currently at event 0 [elapsed time: 0.041 s] 
 INFO: #***************************************************************************
 #
 # original cross-section: 0.003945007000000005
@@ -161,20 +161,20 @@ Number of weights that are NaN:
 All checks passed 
 
 total 4123
-drwxr-xr-x. 17 masizemo zh    2048 Sep  1 23:49 CMSSW_12_4_8
+drwxr-xr-x. 17 masizemo zh    2048 Sep  2 22:54 CMSSW_12_4_8
 drwxr-xr-x.  2 masizemo zh    2048 Sep  1 02:19 InputCards
--rw-r--r--.  1 masizemo zh 3783256 Sep  1 23:53 cmsgrid_final.lhe
+-rw-r--r--.  1 masizemo zh 3783256 Sep  2 22:57 cmsgrid_final.lhe
 -rw-r--r--.  1 masizemo zh  174629 Sep  1 02:19 gridpack_generation.log
 -rw-r--r--.  1 masizemo zh  233620 Sep  1 02:19 gridpack_generation_codegen.log
 -rwxr-xr-x.  1 masizemo zh   11617 Sep  1 02:19 merge.pl
 drwxr-xr-x. 14 masizemo zh    2048 Sep  1 02:19 mgbasedir
-drwxr-xr-x.  3 masizemo zh    2048 Sep  1 23:53 process
+drwxr-xr-x.  3 masizemo zh    2048 Sep  2 22:57 process
 -rwxr-xr-x.  1 masizemo zh    7866 Sep  1 02:17 runcmsgrid.sh
-01-Sep-2023 23:54:02 CEST  Initiating request to open LHE file cmsgrid_final.lhe
-01-Sep-2023 23:54:02 CEST  Successfully opened LHE file cmsgrid_final.lhe
-01-Sep-2023 23:54:02 CEST  Initiating request to open LHE file cmsgrid_final.lhe
-01-Sep-2023 23:54:02 CEST  Successfully opened LHE file cmsgrid_final.lhe
-%MSG-w LogicError:  Pythia8HadronizerFilter:generator@beginRun  01-Sep-2023 23:54:02 CEST Run: 1
+02-Sep-2023 22:58:22 CEST  Initiating request to open LHE file cmsgrid_final.lhe
+02-Sep-2023 22:58:22 CEST  Successfully opened LHE file cmsgrid_final.lhe
+02-Sep-2023 22:58:22 CEST  Initiating request to open LHE file cmsgrid_final.lhe
+02-Sep-2023 22:58:22 CEST  Successfully opened LHE file cmsgrid_final.lhe
+%MSG-w LogicError:  Pythia8HadronizerFilter:generator@beginRun  02-Sep-2023 22:58:22 CEST Run: 1
 ::getByLabel: An attempt was made to read a Run product before endRun() was called.
 The product is of type 'LHERunInfoProduct'.
 The specified ModuleLabel was 'externalLHEProducer'.
@@ -191,7 +191,7 @@ The specified productInstanceName was ''.
  |  |   P  P   Y Y     T    H   H   I    A A     This is PYTHIA version 8.306      |  | 
  |  |   PPP     Y      T    HHHHH   I   AAAAA    Last date of change: 28 Jun 2021  |  | 
  |  |   P       Y      T    H   H   I   A   A                                      |  | 
- |  |   P       Y      T    H   H  III  A   A    Now is 01 Sep 2023 at 23:54:02    |  | 
+ |  |   P       Y      T    H   H  III  A   A    Now is 02 Sep 2023 at 22:58:22    |  | 
  |  |                                                                              |  | 
  |  |   Program documentation and an archive of historic versions is found on:     |  | 
  |  |                                                                              |  | 
@@ -237,7 +237,7 @@ The specified productInstanceName was ''.
  |  |   P  P   Y Y     T    H   H   I    A A     This is PYTHIA version 8.306      |  | 
  |  |   PPP     Y      T    HHHHH   I   AAAAA    Last date of change: 28 Jun 2021  |  | 
  |  |   P       Y      T    H   H   I   A   A                                      |  | 
- |  |   P       Y      T    H   H  III  A   A    Now is 01 Sep 2023 at 23:54:02    |  | 
+ |  |   P       Y      T    H   H  III  A   A    Now is 02 Sep 2023 at 22:58:22    |  | 
  |  |                                                                              |  | 
  |  |   Program documentation and an archive of historic versions is found on:     |  | 
  |  |                                                                              |  | 
@@ -3760,8 +3760,8 @@ NNPDF31_nnlo_as_0118 PDF set, member #0, version 1; LHAPDF ID = 303600
 
  --------  End PYTHIA Particle Data Table  -----------------------------------------------------------------------------------------
 
-Begin processing the 1st record. Run 1, Event 1, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:03.713 CEST
-Begin processing the 2nd record. Run 1, Event 2, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:03.745 CEST
+Begin processing the 1st record. Run 1, Event 1, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:23.477 CEST
+Begin processing the 2nd record. Run 1, Event 2, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:23.497 CEST
  PYTHIA Warning in PartonLevel::wzDecayShowers: found undecayed resonance id = 1000021
 
  --------  PYTHIA Info Listing  ---------------------------------------- 
@@ -5687,109 +5687,109 @@ Begin processing the 2nd record. Run 1, Event 2, LumiSection 1 on stream 0 at 01
 # It uses T. Chan's closest pair algorithm, S. Fortune's Voronoi code
 # and 3rd party plugin jet algorithms. See COPYING file for details.
 #--------------------------------------------------------------------------
-Begin processing the 3rd record. Run 1, Event 3, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:03.856 CEST
-Begin processing the 4th record. Run 1, Event 4, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:03.872 CEST
-Begin processing the 5th record. Run 1, Event 5, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:03.910 CEST
-Begin processing the 6th record. Run 1, Event 6, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:03.933 CEST
+Begin processing the 3rd record. Run 1, Event 3, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:23.590 CEST
+Begin processing the 4th record. Run 1, Event 4, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:23.606 CEST
+Begin processing the 5th record. Run 1, Event 5, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:23.643 CEST
+Begin processing the 6th record. Run 1, Event 6, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:23.666 CEST
  PYTHIA Warning in SimpleSpaceShower::pT2nextQCD: weight above unity  
-Begin processing the 7th record. Run 1, Event 7, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:03.942 CEST
-Begin processing the 8th record. Run 1, Event 8, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:03.954 CEST
+Begin processing the 7th record. Run 1, Event 7, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:23.675 CEST
+Begin processing the 8th record. Run 1, Event 8, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:23.687 CEST
  PYTHIA Warning in SimpleSpaceShower::pT2nextQCD: small daughter PDF  
-Begin processing the 9th record. Run 1, Event 9, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:03.968 CEST
-Begin processing the 10th record. Run 1, Event 10, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:03.984 CEST
-Begin processing the 11th record. Run 1, Event 11, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:04.045 CEST
-Begin processing the 12th record. Run 1, Event 12, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:04.138 CEST
-Begin processing the 13th record. Run 1, Event 13, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:04.180 CEST
-Begin processing the 14th record. Run 1, Event 14, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:04.274 CEST
-Begin processing the 15th record. Run 1, Event 15, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:04.290 CEST
-Begin processing the 16th record. Run 1, Event 16, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:04.327 CEST
-Begin processing the 17th record. Run 1, Event 17, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:04.364 CEST
-Begin processing the 18th record. Run 1, Event 18, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:04.396 CEST
-Begin processing the 19th record. Run 1, Event 19, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:04.427 CEST
-Begin processing the 20th record. Run 1, Event 20, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:04.453 CEST
-Begin processing the 21st record. Run 1, Event 21, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:04.459 CEST
-Begin processing the 22nd record. Run 1, Event 22, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:04.468 CEST
-Begin processing the 23rd record. Run 1, Event 23, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:04.506 CEST
-Begin processing the 24th record. Run 1, Event 24, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:04.518 CEST
-Begin processing the 25th record. Run 1, Event 25, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:04.560 CEST
-Begin processing the 26th record. Run 1, Event 26, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:04.601 CEST
-Begin processing the 27th record. Run 1, Event 27, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:04.621 CEST
-Begin processing the 28th record. Run 1, Event 28, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:04.640 CEST
-Begin processing the 29th record. Run 1, Event 29, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:04.733 CEST
-Begin processing the 30th record. Run 1, Event 30, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:04.819 CEST
-Begin processing the 31st record. Run 1, Event 31, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:04.840 CEST
-Begin processing the 32nd record. Run 1, Event 32, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:04.845 CEST
-Begin processing the 33rd record. Run 1, Event 33, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:04.866 CEST
-Begin processing the 34th record. Run 1, Event 34, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:04.899 CEST
-Begin processing the 35th record. Run 1, Event 35, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:04.908 CEST
-Begin processing the 36th record. Run 1, Event 36, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:04.947 CEST
-Begin processing the 37th record. Run 1, Event 37, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:04.962 CEST
-Begin processing the 38th record. Run 1, Event 38, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:04.971 CEST
-Begin processing the 39th record. Run 1, Event 39, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:04.979 CEST
-Begin processing the 40th record. Run 1, Event 40, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:04.996 CEST
-Begin processing the 41st record. Run 1, Event 41, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:05.021 CEST
-Begin processing the 42nd record. Run 1, Event 42, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:05.034 CEST
-Begin processing the 43rd record. Run 1, Event 43, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:05.048 CEST
-Begin processing the 44th record. Run 1, Event 44, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:05.066 CEST
-Begin processing the 45th record. Run 1, Event 45, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:05.084 CEST
-Begin processing the 46th record. Run 1, Event 46, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:05.141 CEST
-Begin processing the 47th record. Run 1, Event 47, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:05.192 CEST
-Begin processing the 48th record. Run 1, Event 48, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:05.216 CEST
-Begin processing the 49th record. Run 1, Event 49, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:05.240 CEST
-Begin processing the 50th record. Run 1, Event 50, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:05.275 CEST
-Begin processing the 51st record. Run 1, Event 51, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:05.304 CEST
-Begin processing the 52nd record. Run 1, Event 52, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:05.325 CEST
-Begin processing the 53rd record. Run 1, Event 53, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:05.332 CEST
-Begin processing the 54th record. Run 1, Event 54, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:05.371 CEST
-Begin processing the 55th record. Run 1, Event 55, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:05.384 CEST
-Begin processing the 56th record. Run 1, Event 56, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:05.397 CEST
-Begin processing the 57th record. Run 1, Event 57, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:05.401 CEST
-Begin processing the 58th record. Run 1, Event 58, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:05.426 CEST
-Begin processing the 59th record. Run 1, Event 59, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:05.484 CEST
-Begin processing the 60th record. Run 1, Event 60, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:05.510 CEST
-Begin processing the 61st record. Run 1, Event 61, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:05.545 CEST
-Begin processing the 62nd record. Run 1, Event 62, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:05.612 CEST
-Begin processing the 63rd record. Run 1, Event 63, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:05.665 CEST
-Begin processing the 64th record. Run 1, Event 64, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:05.700 CEST
-Begin processing the 65th record. Run 1, Event 65, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:05.711 CEST
-Begin processing the 66th record. Run 1, Event 66, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:05.731 CEST
-Begin processing the 67th record. Run 1, Event 67, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:05.762 CEST
-Begin processing the 68th record. Run 1, Event 68, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:05.775 CEST
-Begin processing the 69th record. Run 1, Event 69, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:05.808 CEST
-Begin processing the 70th record. Run 1, Event 70, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:05.836 CEST
-Begin processing the 71st record. Run 1, Event 71, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:05.882 CEST
-Begin processing the 72nd record. Run 1, Event 72, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:05.910 CEST
-Begin processing the 73rd record. Run 1, Event 73, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:05.946 CEST
-Begin processing the 74th record. Run 1, Event 74, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:05.952 CEST
-Begin processing the 75th record. Run 1, Event 75, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:05.980 CEST
-Begin processing the 76th record. Run 1, Event 76, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:06.010 CEST
-Begin processing the 77th record. Run 1, Event 77, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:06.059 CEST
-Begin processing the 78th record. Run 1, Event 78, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:06.066 CEST
+Begin processing the 9th record. Run 1, Event 9, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:23.700 CEST
+Begin processing the 10th record. Run 1, Event 10, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:23.716 CEST
+Begin processing the 11th record. Run 1, Event 11, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:23.776 CEST
+Begin processing the 12th record. Run 1, Event 12, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:23.868 CEST
+Begin processing the 13th record. Run 1, Event 13, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:23.910 CEST
+Begin processing the 14th record. Run 1, Event 14, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:24.002 CEST
+Begin processing the 15th record. Run 1, Event 15, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:24.018 CEST
+Begin processing the 16th record. Run 1, Event 16, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:24.054 CEST
+Begin processing the 17th record. Run 1, Event 17, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:24.090 CEST
+Begin processing the 18th record. Run 1, Event 18, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:24.122 CEST
+Begin processing the 19th record. Run 1, Event 19, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:24.152 CEST
+Begin processing the 20th record. Run 1, Event 20, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:24.179 CEST
+Begin processing the 21st record. Run 1, Event 21, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:24.185 CEST
+Begin processing the 22nd record. Run 1, Event 22, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:24.193 CEST
+Begin processing the 23rd record. Run 1, Event 23, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:24.230 CEST
+Begin processing the 24th record. Run 1, Event 24, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:24.241 CEST
+Begin processing the 25th record. Run 1, Event 25, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:24.282 CEST
+Begin processing the 26th record. Run 1, Event 26, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:24.322 CEST
+Begin processing the 27th record. Run 1, Event 27, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:24.341 CEST
+Begin processing the 28th record. Run 1, Event 28, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:24.360 CEST
+Begin processing the 29th record. Run 1, Event 29, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:24.450 CEST
+Begin processing the 30th record. Run 1, Event 30, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:24.535 CEST
+Begin processing the 31st record. Run 1, Event 31, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:24.556 CEST
+Begin processing the 32nd record. Run 1, Event 32, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:24.561 CEST
+Begin processing the 33rd record. Run 1, Event 33, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:24.581 CEST
+Begin processing the 34th record. Run 1, Event 34, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:24.615 CEST
+Begin processing the 35th record. Run 1, Event 35, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:24.624 CEST
+Begin processing the 36th record. Run 1, Event 36, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:24.663 CEST
+Begin processing the 37th record. Run 1, Event 37, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:24.677 CEST
+Begin processing the 38th record. Run 1, Event 38, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:24.685 CEST
+Begin processing the 39th record. Run 1, Event 39, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:24.694 CEST
+Begin processing the 40th record. Run 1, Event 40, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:24.711 CEST
+Begin processing the 41st record. Run 1, Event 41, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:24.735 CEST
+Begin processing the 42nd record. Run 1, Event 42, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:24.749 CEST
+Begin processing the 43rd record. Run 1, Event 43, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:24.763 CEST
+Begin processing the 44th record. Run 1, Event 44, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:24.780 CEST
+Begin processing the 45th record. Run 1, Event 45, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:24.798 CEST
+Begin processing the 46th record. Run 1, Event 46, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:24.855 CEST
+Begin processing the 47th record. Run 1, Event 47, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:24.905 CEST
+Begin processing the 48th record. Run 1, Event 48, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:24.928 CEST
+Begin processing the 49th record. Run 1, Event 49, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:24.951 CEST
+Begin processing the 50th record. Run 1, Event 50, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:24.985 CEST
+Begin processing the 51st record. Run 1, Event 51, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:25.014 CEST
+Begin processing the 52nd record. Run 1, Event 52, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:25.034 CEST
+Begin processing the 53rd record. Run 1, Event 53, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:25.041 CEST
+Begin processing the 54th record. Run 1, Event 54, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:25.079 CEST
+Begin processing the 55th record. Run 1, Event 55, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:25.091 CEST
+Begin processing the 56th record. Run 1, Event 56, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:25.103 CEST
+Begin processing the 57th record. Run 1, Event 57, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:25.107 CEST
+Begin processing the 58th record. Run 1, Event 58, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:25.131 CEST
+Begin processing the 59th record. Run 1, Event 59, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:25.187 CEST
+Begin processing the 60th record. Run 1, Event 60, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:25.212 CEST
+Begin processing the 61st record. Run 1, Event 61, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:25.245 CEST
+Begin processing the 62nd record. Run 1, Event 62, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:25.310 CEST
+Begin processing the 63rd record. Run 1, Event 63, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:25.360 CEST
+Begin processing the 64th record. Run 1, Event 64, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:25.395 CEST
+Begin processing the 65th record. Run 1, Event 65, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:25.405 CEST
+Begin processing the 66th record. Run 1, Event 66, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:25.425 CEST
+Begin processing the 67th record. Run 1, Event 67, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:25.455 CEST
+Begin processing the 68th record. Run 1, Event 68, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:25.467 CEST
+Begin processing the 69th record. Run 1, Event 69, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:25.500 CEST
+Begin processing the 70th record. Run 1, Event 70, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:25.527 CEST
+Begin processing the 71st record. Run 1, Event 71, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:25.572 CEST
+Begin processing the 72nd record. Run 1, Event 72, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:25.600 CEST
+Begin processing the 73rd record. Run 1, Event 73, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:25.636 CEST
+Begin processing the 74th record. Run 1, Event 74, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:25.642 CEST
+Begin processing the 75th record. Run 1, Event 75, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:25.670 CEST
+Begin processing the 76th record. Run 1, Event 76, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:25.699 CEST
+Begin processing the 77th record. Run 1, Event 77, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:25.747 CEST
+Begin processing the 78th record. Run 1, Event 78, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:25.754 CEST
  PYTHIA Error in BeamRemnants::setKinematics: kinematics construction failed  
-Begin processing the 79th record. Run 1, Event 79, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:06.193 CEST
-Begin processing the 80th record. Run 1, Event 80, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:06.245 CEST
-Begin processing the 81st record. Run 1, Event 81, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:06.263 CEST
-Begin processing the 82nd record. Run 1, Event 82, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:06.281 CEST
-Begin processing the 83rd record. Run 1, Event 83, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:06.297 CEST
+Begin processing the 79th record. Run 1, Event 79, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:25.879 CEST
+Begin processing the 80th record. Run 1, Event 80, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:25.930 CEST
+Begin processing the 81st record. Run 1, Event 81, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:25.947 CEST
+Begin processing the 82nd record. Run 1, Event 82, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:25.965 CEST
+Begin processing the 83rd record. Run 1, Event 83, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:25.980 CEST
  PYTHIA Warning in SimpleTimeShower::findMEcorr: ME weight above PS one  
-Begin processing the 84th record. Run 1, Event 84, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:06.304 CEST
-Begin processing the 85th record. Run 1, Event 85, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:06.311 CEST
-Begin processing the 86th record. Run 1, Event 86, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:06.325 CEST
-Begin processing the 87th record. Run 1, Event 87, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:06.349 CEST
-Begin processing the 88th record. Run 1, Event 88, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:06.369 CEST
-Begin processing the 89th record. Run 1, Event 89, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:06.447 CEST
-Begin processing the 90th record. Run 1, Event 90, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:06.453 CEST
-Begin processing the 91st record. Run 1, Event 91, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:06.463 CEST
-Begin processing the 92nd record. Run 1, Event 92, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:06.478 CEST
-Begin processing the 93rd record. Run 1, Event 93, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:06.487 CEST
-Begin processing the 94th record. Run 1, Event 94, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:06.494 CEST
-Begin processing the 95th record. Run 1, Event 95, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:06.518 CEST
-Begin processing the 96th record. Run 1, Event 96, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:06.527 CEST
-Begin processing the 97th record. Run 1, Event 97, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:06.545 CEST
-Begin processing the 98th record. Run 1, Event 98, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:06.632 CEST
-Begin processing the 99th record. Run 1, Event 99, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:06.683 CEST
-Begin processing the 100th record. Run 1, Event 100, LumiSection 1 on stream 0 at 01-Sep-2023 23:54:06.692 CEST
-01-Sep-2023 23:54:06 CEST  Closed LHE file cmsgrid_final.lhe
+Begin processing the 84th record. Run 1, Event 84, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:25.987 CEST
+Begin processing the 85th record. Run 1, Event 85, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:25.994 CEST
+Begin processing the 86th record. Run 1, Event 86, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:26.007 CEST
+Begin processing the 87th record. Run 1, Event 87, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:26.030 CEST
+Begin processing the 88th record. Run 1, Event 88, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:26.049 CEST
+Begin processing the 89th record. Run 1, Event 89, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:26.123 CEST
+Begin processing the 90th record. Run 1, Event 90, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:26.129 CEST
+Begin processing the 91st record. Run 1, Event 91, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:26.139 CEST
+Begin processing the 92nd record. Run 1, Event 92, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:26.153 CEST
+Begin processing the 93rd record. Run 1, Event 93, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:26.162 CEST
+Begin processing the 94th record. Run 1, Event 94, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:26.169 CEST
+Begin processing the 95th record. Run 1, Event 95, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:26.193 CEST
+Begin processing the 96th record. Run 1, Event 96, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:26.201 CEST
+Begin processing the 97th record. Run 1, Event 97, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:26.219 CEST
+Begin processing the 98th record. Run 1, Event 98, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:26.303 CEST
+Begin processing the 99th record. Run 1, Event 99, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:26.352 CEST
+Begin processing the 100th record. Run 1, Event 100, LumiSection 1 on stream 0 at 02-Sep-2023 22:58:26.361 CEST
+02-Sep-2023 22:58:26 CEST  Closed LHE file cmsgrid_final.lhe
 
  *-------  PYTHIA Event and Cross Section Statistics  -------------------------------------------------------------*
  |                                                                                                                 |
@@ -5853,23 +5853,23 @@ Filter efficiency (event-level)= (34) / (34) = 1.000e+00 +- 0.000e+00    [TO BE 
 After filter: final cross section = 1.341e-03 +- 1.873e-04 pb
 After filter: final fraction of events with negative weights = 0.000e+00 +- 0.000e+00
 After filter: final equivalent lumi for 1M events (1/fb) = 7.455e+05 +- 1.041e+05
-TimeReport> Time report complete in 379.451 seconds
+TimeReport> Time report complete in 354.982 seconds
  Time Summary: 
- - Min event:   0.00459695
- - Max event:   0.125795
- - Avg event:   0.0293845
- - Total loop:  370.29
- - Total init:  9.16031
- - Total job:   379.451
+ - Min event:   0.00419712
+ - Max event:   0.123995
+ - Avg event:   0.0284927
+ - Total loop:  340.619
+ - Total init:  14.3619
+ - Total job:   354.982
  - EventSetup Lock: 0
  - EventSetup Get:  0
- Event Throughput: 0.270058 ev/s
+ Event Throughput: 0.293583 ev/s
  CPU Summary: 
- - Total loop:     125.875
- - Total init:     5.25128
+ - Total loop:     115.071
+ - Total init:     5.00661
  - Total extra:    0
- - Total children: 121.236
- - Total job:      131.127
+ - Total children: 110.571
+ - Total job:      120.078
  Processing Summary: 
  - Number of Events:  100
  - Number of Global Begin Lumi Calls:  1
