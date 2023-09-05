@@ -89,7 +89,8 @@ generator = cms.EDFilter("Pythia8HadronizerFilter",
       'JetMatching:scheme = 1',
       'JetMatching:merge = on',
       'JetMatching:jetAlgorithm = 2',
-      'JetMatching:etaJetMax = 5.',
+      #etaJetMax changed from 5 to 1
+      'JetMatching:etaJetMax = 1.',
       'JetMatching:coneRadius = 1.',
       'JetMatching:slowJetPower = 1',
       'JetMatching:qCut = 147', #this is the actual merging scale
