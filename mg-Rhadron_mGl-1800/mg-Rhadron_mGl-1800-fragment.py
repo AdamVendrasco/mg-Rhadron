@@ -87,7 +87,8 @@ generator = cms.EDFilter("Pythia8HadronizerFilter",
     JetMatchingParameters = cms.vstring(
       'JetMatching:setMad = off',
       'JetMatching:scheme = 1',
-      'JetMatching:merge = on',
+      #Set merge from on to off
+      'JetMatching:merge = off',
       'JetMatching:jetAlgorithm = 2',
       'JetMatching:etaJetMax = 5.',
       'JetMatching:coneRadius = 1.',
@@ -114,7 +115,6 @@ generator = cms.EDFilter("Pythia8HadronizerFilter",
   ),
  SLHATableForPythia8 = cms.string(baseSLHATable),
 )
-
 #We would like to change the particleID lists to be more inclusive of all RHadrons.
 dirhadrongenfilter = cms.EDFilter("MCParticlePairFilter",
     Status = cms.untracked.vint32(1, 1),
@@ -127,4 +127,4 @@ dirhadrongenfilter = cms.EDFilter("MCParticlePairFilter",
     ParticleID2 = cms.untracked.vint32(1000993,1009213,1009313,1009323,1009113,1009223,1009333,1091114,1092114,1092214,1092224,1093114,1093214,1093224,1093314,1093324,1093334)
 )
 
-ProductionFilterSequence = cms.Sequence(generator*dirhadrongenfilter)
+ProductionFilterSequence = cms.Sequence(generator*dirhadrongenfilter) 
