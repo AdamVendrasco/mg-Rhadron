@@ -85,15 +85,16 @@ generator = cms.EDFilter("Pythia8HadronizerFilter",
     pythia8CommonSettingsBlock,
     pythia8CP5SettingsBlock,
     JetMatchingParameters = cms.vstring(
-      'JetMatching:setMad = off',
+      #changed setMad from off to on
+      'JetMatching:setMad = on',
       'JetMatching:scheme = 1',
-      #Set merge from on to off
-      'JetMatching:merge = off',
+      'JetMatching:merge = on',
       'JetMatching:jetAlgorithm = 2',
       'JetMatching:etaJetMax = 5.',
-      'JetMatching:coneRadius = 1.',
+      'JetMatching:coneRadius = .7', #changed from 1 to .7
       'JetMatching:slowJetPower = 1',
-      'JetMatching:qCut = 147', #this is the actual merging scale
+      #changed qCut from 147 to 30 to correspond with MG xqcut
+      'JetMatching:qCut = 30', #this is the actual merging scale
       'JetMatching:nQmatch = 5', #4 corresponds to 4-flavour scheme (no matching of b-quarks), 5 for 5-flavour scheme
       'JetMatching:nJetMax = 2', #number of partons in born matrix element for highest multiplicity
       'JetMatching:doShowerKt = off', #off for MLM matching, turn on for shower-kT matching
