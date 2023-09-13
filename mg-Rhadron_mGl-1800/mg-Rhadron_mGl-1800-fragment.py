@@ -16,7 +16,8 @@ generator = cms.EDFilter("Pythia8HadronizerFilter",
   maxEventsToPrint = cms.untracked.int32(1),
   pythiaPylistVerbosity = cms.untracked.int32(1),
   filterEfficiency = cms.untracked.double(1.0),
-  pythiaHepMCVerbosity = cms.untracked.bool(False),
+  #Changed pythiaHepMCVerbosity to true
+  pythiaHepMCVerbosity = cms.untracked.bool(True),
   comEnergy = cms.double(13000.),
   PythiaParameters = cms.PSet(
     pythia8CommonSettingsBlock,
