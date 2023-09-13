@@ -25,8 +25,8 @@ else
 fi
 
 config_in_filename="$run-fragment.py"
-config_out_filename="../gen-output-configs/$run-$cmssw_version-n$nevents-1_cfg.py"
-root_out_filename="../gen-output-files/$run-$cmssw_version-n$nevents.root"
+config_out_filename="../gen-output-configs/$run-$cmssw_version-n$nevents-$debug_tag-1_cfg.py"
+root_out_filename="../gen-output-files/$run-$cmssw_version-n$nevents-$debug_tag.root"
 debug_out_filename="../text-logs/$run-$cmssw_version-n$nevents-$debug_tag.debug"
 
 if [[ ! -z $(grep -F "$cmssw_version" "src/Configuration/GenProduction/python/$config_in_filename") ]]; then
