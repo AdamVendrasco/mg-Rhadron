@@ -12,69 +12,6 @@ externalLHEProducer = cms.EDProducer("ExternalLHEProducer",
 )
 
 import math
-baseSLHATable="""
-BLOCK MASS
-   2000001     1.00000000E+05
-   2000002     1.00000000E+05
-   2000003     1.00000000E+05
-   2000004     1.00000000E+05
-   2000005     1.00000000E+05
-   2000006     1.00000000E+05
-   2000011     1.00000000E+05
-   2000013     1.00000000E+05
-   2000015     1.00000000E+05
-   1000001     1.00000000E+05
-   1000002     1.00000000E+05
-   1000003     1.00000000E+05
-   1000004     1.00000000E+05
-   1000005     1.00000000E+05
-   1000006     1.00000000E+05
-   1000011     1.00000000E+05
-   1000012     1.00000000E+05
-   1000013     1.00000000E+05
-   1000014     1.00000000E+05
-   1000015     1.00000000E+05
-   1000016     1.00000000E+05
-   1000021     1800
-   1000022     1.00000000E+00
-   1000023     750
-   1000024     750
-   1000025     1.00000000E+05
-   1000035     1.00000000E+05
-   1000037     1.00000000E+05
-#
-DECAY   2000001     0.00000000E+00
-DECAY   2000002     0.00000000E+00
-DECAY   2000003     0.00000000E+00
-DECAY   2000004     0.00000000E+00
-DECAY   2000005     0.00000000E+00
-DECAY   2000006     0.00000000E+00
-DECAY   2000011     0.00000000E+00
-DECAY   2000013     0.00000000E+00
-DECAY   2000015     0.00000000E+00
-DECAY   1000001     0.00000000E+00
-DECAY   1000002     0.00000000E+00
-DECAY   1000003     0.00000000E+00
-DECAY   1000004     0.00000000E+00
-DECAY   1000005     0.00000000E+00
-DECAY   1000006     0.00000000E+00
-DECAY   1000011     0.00000000E+00
-DECAY   1000012     0.00000000E+00
-DECAY   1000013     0.00000000E+00
-DECAY   1000014     0.00000000E+00
-DECAY   1000015     0.00000000E+00
-DECAY   1000016     0.00000000E+00
-
-DECAY   1000021     1.00000000E-12
-     1.00000000E+00    3          1         -1    1000022
-DECAY   1000023     1.00000000E-01
-     1.00000000E+00    2         22    1000022
-DECAY   1000024     1.00000000E-01
-     0.0000000    3     1000022        -1      2
-     1.0000000    2     1000022        24
-
-DECAY   1000022     0.00000000E+00
-"""
 generator = cms.EDFilter("Pythia8HadronizerFilter",
   maxEventsToPrint = cms.untracked.int32(1),
   pythiaPylistVerbosity = cms.untracked.int32(1),
@@ -85,19 +22,30 @@ generator = cms.EDFilter("Pythia8HadronizerFilter",
     pythia8CommonSettingsBlock,
     pythia8CP5SettingsBlock,
     JetMatchingParameters = cms.vstring(
-      #changed setMad from off to on
-      'JetMatching:setMad = on',
+      #changed setMad from on to off(default)
+      'JetMatching:setMad = off',
+      
+      #Scheme and Usage
       'JetMatching:scheme = 1',
       'JetMatching:merge = on',
+      
+      #Jet algorithm
       'JetMatching:jetAlgorithm = 2',
+      'JetMatching:slowJetPower = 1', 
+      
+      #Merging parameters
       'JetMatching:etaJetMax = 5.',
+      'JetMatching:eTjetMin = 30', #should match qCut
       'JetMatching:coneRadius = .7', #changed from 1 to .7
-      'JetMatching:slowJetPower = 1',
-      #changed qCut from 147 to 30 to correspond with MG xqcut
-      'JetMatching:qCut = 30', #this is the actual merging scale
-      'JetMatching:nQmatch = 5', #4 corresponds to 4-flavour scheme (no matching of b-quarks), 5 for 5-flavour scheme
+      
+      #Exclusive mode
       'JetMatching:nJetMax = 2', #number of partons in born matrix element for highest multiplicity
+
+      #Madgraph specific parameters
       'JetMatching:doShowerKt = off', #off for MLM matching, turn on for shower-kT matching
+      'JetMatching:qCut = 30', #Should match xQcut def in MG run card
+      'JetMatching:nQmatch = 5', #4 corresponds to 4-flavour scheme (no matching of b-quarks), 5 for 5-flavour scheme
+      
       '6:m0 = 172.5',
       '24:mMin = 7',
       'Check:abortIfVeto = on',
@@ -114,7 +62,7 @@ generator = cms.EDFilter("Pythia8HadronizerFilter",
       'processParameters'
     )
   ),
- SLHATableForPythia8 = cms.string(baseSLHATable),
+ #SLHATableForPythia8 = cms.string(baseSLHATable),
 )
 #We would like to change the particleID lists to be more inclusive of all RHadrons.
 dirhadrongenfilter = cms.EDFilter("MCParticlePairFilter",
