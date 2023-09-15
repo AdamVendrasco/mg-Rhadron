@@ -20,13 +20,6 @@ else
 	exit 1
 fi
 
-if [[ ! -z $(grep -F "$cmssw_version" "$cmssw_version/src/Configuration/GenProduction/python/$config_in_filename") ]]; then
-        echo "Gridpack CMSSW version matches declared CMSSSW version."
-else
-        echo "gridpack CMSSW version does not match declared CMSSW version. Exiting."
-	exit 1
-fi
-
 config_out_filename="$run/output-configs/$run-$cmssw_version-n$nevents-$debug_tag-1_cfg.py"
 root_out_filename="$run/root-files/$run-$cmssw_version-n$nevents-$debug_tag.root"
 debug_out_filename="$run/text-logs/$run-$cmssw_version-n$nevents-$debug_tag.debug"
@@ -35,6 +28,13 @@ debug_out_filename="$run/text-logs/$run-$cmssw_version-n$nevents-$debug_tag.debu
 echo "Storing log file in $debug_out_filename"
 echo "Copying $config_in_filename from $run/input-configs/ to src/Configuration/GenProduction/python/"
 cp -v $run/input-configs/$config_in_filename $cmssw_version/src/Configuration/GenProduction/python/
+
+if [[ ! -z $(grep -F "$cmssw_version" "$cmssw_version/src/Configuration/GenProduction/python/$config_in_filename") ]]; then
+        echo "Gridpack CMSSW version matches declared CMSSSW version."
+else
+        echo "gridpack CMSSW version does not match declared CMSSW version. Exiting."
+	exit 1
+fi
 
 
 genStart() {
