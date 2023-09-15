@@ -13,7 +13,7 @@ config_in_filename="$run-fragment.py"
 if [[ $cmssw_version == "" ]]; then
 	echo "No CMSSW version declared. Exiting"
 	exit 1
-elif[[ ! -z $(ls | grep "$cmssw_version") ]]; then
+elif [[ ! -z $(ls | grep "$cmssw_version") ]]; then
 	echo "Declared CMSSW version $cmssw_version installed."
 else
 	echo "Declared CMSSW version $cmssw_version not found. Exiting."
@@ -38,13 +38,14 @@ cp -v $run/input-configs/$config_in_filename $cmssw_version/src/Configuration/Ge
 
 
 genStart() {
-	cd -v $cmssw_version
+	cd $cmssw_version
 	echo "Setting up cmsenv"
 	cmsenv
 	echo "Scram step"
 	scram b
 
-	nohup cmsDriver.py Configuration/GenProduction/python/$config_in_filename --python_filename $config_out_filename --eventcontent RAWSIM,LHE --customise Configuration/DataProcessing/Utils.addMonitoring --datatier GEN,LHE --fileout file:$root_out_filename --conditions 106X_upgrade2018_realistic_v4 --beamspot Realistic25ns13TeVEarly2018Collision --step LHE,GEN --geometry DB:Extended --era Run2_2018 --mc -n $nevents 2>&1 | tee $debug_out_filename
+	nohup cmsDriver.py Configuration/GenProduction/python/$config_in_filename --python_filename ../$config_out_filename --eventcontent RAWSIM,LHE --customise Configuration/DataProcessing/Utils.addMonitoring --datatier GEN,LHE --fileout file:../$root_out_filename --conditions 106X_upgrade2018_realistic_v4 --beamspot Realistic25ns13TeVEarly2018Collision --step LHE,GEN --geometry DB:Extended --era Run2_2018 --mc -n $nevents 2>&1 | tee ../$debug_out_filename
+cd ..
 }
 
-genStart()
+genStart
