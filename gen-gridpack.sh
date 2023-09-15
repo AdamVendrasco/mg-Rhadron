@@ -1,6 +1,6 @@
 #! /usr/bin/bash
 
-# bash gridpack-gen.sh mg-Rhadron_mGl-1800 CMSSW_12_4_8 1000
+# bash gridpack-gen.sh mg-Rhadron_mGl-1800 CMSSW_12_4_8 1000 mergeOff
 
 run=$1
 cmssw_version="${2:-}"
@@ -25,8 +25,8 @@ else
 fi
 
 config_in_filename="$run-fragment.py"
-config_out_filename="../gen-output-configs/$run-$cmssw_version-n$nevents-$debug_tag-1_cfg.py"
-root_out_filename="../gen-output-files/$run-$cmssw_version-n$nevents-$debug_tag.root"
+config_out_filename="../output-configs/$run-$cmssw_version-n$nevents-$debug_tag-1_cfg.py"
+root_out_filename="../root-files/$run-$cmssw_version-n$nevents-$debug_tag.root"
 debug_out_filename="../text-logs/$run-$cmssw_version-n$nevents-$debug_tag.debug"
 
 if [[ ! -z $(grep -F "$cmssw_version" "src/Configuration/GenProduction/python/$config_in_filename") ]]; then
@@ -38,8 +38,9 @@ fi
 echo "Storing log file in $debug_out_filename"
 echo "Setting up cmsenv"
 cmsenv
+echo "Copying $config_in_filename from ../$run/input-configs/ to src/Configuration/GenProduction/python/"
+cp -v ../$run/input-configs/$config_in_filename src/Configuration/GenProduction/python/
 echo "Scram step"
 scram b
 
-echo "$config_in_filename"
 nohup cmsDriver.py Configuration/GenProduction/python/$config_in_filename --python_filename $config_out_filename --eventcontent RAWSIM,LHE --customise Configuration/DataProcessing/Utils.addMonitoring --datatier GEN,LHE --fileout file:$root_out_filename --conditions 106X_upgrade2018_realistic_v4 --beamspot Realistic25ns13TeVEarly2018Collision --step LHE,GEN --geometry DB:Extended --era Run2_2018 --mc -n $nevents 2>&1 | tee $debug_out_filename
