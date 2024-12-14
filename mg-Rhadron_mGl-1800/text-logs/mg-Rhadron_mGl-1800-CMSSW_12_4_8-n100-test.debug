@@ -1,0 +1,79 @@
+nohup: ignoring input
+%MSG-w CondDBESSource:  (NoModuleName) 14-Dec-2024 02:38:57 CET pre-events
+Plugin for Record PGeometricDetExtraRcd has not been found.
+%MSG
+   ______________________________________     
+         Running Generic Tarball/Gridpack     
+   ______________________________________     
+gridpack tarball path = /afs/cern.ch/user/m/masizemo/hscp/GENrecipie/mg-Rhadron/mg-Rhadron_mGl-1800/input-configs/mg-Rhadron_mGl-1800_slc7_amd64_gcc10_CMSSW_12_4_8_tarball.tar.xz
+%MSG-MG5 number of events requested = 100
+%MSG-MG5 random seed used for the run = 234567
+%MSG-MG5 thread count requested = 1
+%MSG-MG5 residual/optional arguments = 
+tar: /afs/cern.ch/user/m/masizemo/hscp/GENrecipie/mg-Rhadron/mg-Rhadron_mGl-1800/input-configs/mg-Rhadron_mGl-1800_slc7_amd64_gcc10_CMSSW_12_4_8_tarball.tar.xz: Cannot open: Permission denied
+tar: Error is not recoverable: exiting now
+----- Begin Fatal Exception 14-Dec-2024 02:39:06 CET-----------------------
+An exception of category 'ExternalLHEProducer' occurred while
+   [0] Processing global begin Run run: 1
+   [1] Calling method for module ExternalLHEProducer/'externalLHEProducer'
+Exception Message:
+Child failed with exit code 2.
+----- End Fatal Exception -------------------------------------------------
+Another exception was caught while trying to clean up runs after the primary fatal exception.
+
+------------------------------------
+GenXsecAnalyzer:
+------------------------------------
+------------------------------------
+Cross-section summary not available
+------------------------------------
+TimeReport> Time report complete in 36.6969 seconds
+ Time Summary: 
+ - Min event:   1e+06
+ - Max event:   0
+ - Avg event:   0
+ - Total loop:  1.66932
+ - Total init:  35.0274
+ - Total job:   36.6969
+ - EventSetup Lock: 0
+ - EventSetup Get:  0
+ Event Throughput: 0 ev/s
+ CPU Summary: 
+ - Total loop:     0.514256
+ - Total init:     4.60451
+ - Total extra:    0
+ - Total children: 0.117193
+ - Total job:      5.11886
+ Processing Summary: 
+ - Number of Events:  0
+ - Number of Global Begin Lumi Calls:  0
+ - Number of Global Begin Run Calls: 1
+
+
+=============================================
+
+MessageLogger Summary
+
+ type     category        sev    module        subroutine        count    total
+ ---- -------------------- -- ---------------- ----------------  -----    -----
+    1 CondDBESSource       -w (NoModuleName)                         1        1
+    2 GenXSecAnalyzer      -w GenXSecAnalyzer:                       2        2
+    3 TimeReport           -e AfterModEndJob                         1        1
+    4 Additional Exception -s PostEndProcessBl                       1        1
+    5 Fatal Exception      -s AfterModGlobalBe                       1        1
+
+ type    category    Examples: run/evt        run/evt          run/evt
+ ---- -------------------- ---------------- ---------------- ----------------
+    1 CondDBESSource       pre-events                        
+    2 GenXSecAnalyzer      EndJob           EndJob           
+    3 TimeReport           EndJob                            
+    4 Additional Exceptions PostEndProcessBl                  
+    5 Fatal Exception      Run: 1                            
+
+Severity    # Occurrences   Total Occurrences
+--------    -------------   -----------------
+Warning                 3                   3
+Error                   1                   1
+System                  2                   2
+
+dropped waiting message count 0
