@@ -4,7 +4,7 @@ from Configuration.Generator.Pythia8CommonSettings_cfi import *
 from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *  
 
 externalLHEProducer = cms.EDProducer("ExternalLHEProducer",
-    args = cms.vstring("/afs/cern.ch/user/m/masizemo/hscp/GENrecipie/mg-Rhadron/mg-Rhadron_mGl-1800/input-configs/mg-Rhadron_mGl-1800_slc7_amd64_gcc10_CMSSW_12_4_8_tarball.tar.xz"),
+    args = cms.vstring("/eos/user/a/avendras/mg-Rhadron/mg-Rhadron_mGl-1800/input-configs/mg-Rhadron_mGl-1800_slc7_amd64_gcc10_CMSSW_12_4_8_tarball.tar.xz"),
     nEvents = cms.untracked.uint32(5000),
     numberOfParameters = cms.uint32(1),
     outputFile = cms.string('cmsgrid_final.lhe'),
@@ -24,32 +24,32 @@ generator = cms.EDFilter("Pythia8HadronizerFilter",
     pythia8CP5SettingsBlock,
     JetMatchingParameters = cms.vstring(
       #changed setMad from on to off(default)
-      'JetMatching:setMad = off',
+      #'JetMatching:setMad = off',
       
       #Scheme and Usage
-      'JetMatching:scheme = 1',
-      'JetMatching:merge = on',
+      #'JetMatching:scheme = 1',
+      #'JetMatching:merge = off',
       
       #Jet algorithm
-      'JetMatching:jetAlgorithm = 2',
-      'JetMatching:slowJetPower = 1', 
+      #'JetMatching:jetAlgorithm = 2',
+      #'JetMatching:slowJetPower = 1', 
       
       #Merging parameters
-      'JetMatching:etaJetMax = 5.',
-      'JetMatching:eTjetMin = 30', #should match qCut
-      'JetMatching:coneRadius = .7', #changed from 1 to .7
+      #'JetMatching:etaJetMax = 5.',
+      #'JetMatching:eTjetMin = 30', #should match qCut
+      #'JetMatching:coneRadius = .7', #changed from 1 to .7
       
       #Exclusive mode
-      'JetMatching:nJetMax = 2', #number of partons in born matrix element for highest multiplicity
+      #'JetMatching:nJetMax = 2', #number of partons in born matrix element for highest multiplicity
 
       #Madgraph specific parameters
-      'JetMatching:doShowerKt = off', #off for MLM matching, turn on for shower-kT matching
-      'JetMatching:qCut = 30', #Should match xQcut def in MG run card
-      'JetMatching:nQmatch = 5', #4 corresponds to 4-flavour scheme (no matching of b-quarks), 5 for 5-flavour scheme
+      #'JetMatching:doShowerKt = off', #off for MLM matching, turn on for shower-kT matching
+      #'JetMatching:qCut = 30', #Should match xQcut def in MG run card
+      #'JetMatching:nQmatch = 5', #4 corresponds to 4-flavour scheme (no matching of b-quarks), 5 for 5-flavour scheme
       
-      '6:m0 = 172.5',
-      '24:mMin = 7',
-      'Check:abortIfVeto = on',
+      #6:m0 = 172.5',
+      #'24:mMin = 7',
+      #'Check:abortIfVeto = on',
     ),
     processParameters = cms.vstring(
       'RHadrons:allow  = on',
