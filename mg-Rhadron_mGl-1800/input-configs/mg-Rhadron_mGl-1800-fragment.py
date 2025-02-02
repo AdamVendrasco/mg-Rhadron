@@ -24,14 +24,14 @@ generator = cms.EDFilter("Pythia8HadronizerFilter",
     pythia8CP5SettingsBlock,
     JetMatchingParameters = cms.vstring(
       # Changed setMad from on to off (default)
-      #'JetMatching:setMad = off',
+      'JetMatching:setMad = off',
       
       # Scheme and Usage
-      #'JetMatching:scheme = 1',
+      'JetMatching:scheme = 1',
       #'JetMatching:merge = off',
       
       # Jet algorithm
-      #'JetMatching:jetAlgorithm = 2',
+      'JetMatching:jetAlgorithm = 2',
       #'JetMatching:slowJetPower = 1', 
       
       # Merging parameters
