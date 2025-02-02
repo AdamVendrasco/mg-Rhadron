@@ -27,11 +27,11 @@ generator = cms.EDFilter("Pythia8HadronizerFilter",
       'JetMatching:setMad = off',
       
       # Scheme and Usage
-      'JetMatching:scheme = 1',
+      #'JetMatching:scheme = 1',
       #'JetMatching:merge = off',
       
       # Jet algorithm
-      'JetMatching:jetAlgorithm = 2',
+      #'JetMatching:jetAlgorithm = 2',
       #'JetMatching:slowJetPower = 1', 
       
       # Merging parameters
