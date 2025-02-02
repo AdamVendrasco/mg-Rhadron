@@ -1,7 +1,7 @@
    ______________________________________     
          Running Generic Tarball/Gridpack     
    ______________________________________     
-gridpack tarball path = /eos/user/a/avendras/mg-Rhadron/mg-Rhadron_mGl-1800/input-configs/mg-Rhadron_mGl-1800_slc7_amd64_gcc10_CMSSW_12_4_8_tarball.tar.xz
+Gridpack tarball path = /eos/user/a/avendras/mg-Rhadron/mg-Rhadron_mGl-1800/input-configs/mg-Rhadron_mGl-1800_slc7_amd64_gcc10_CMSSW_12_4_8_tarball.tar.xz
 %MSG-MG5 number of events requested = 1000
 %MSG-MG5 random seed used for the run = 234567
 %MSG-MG5 thread count requested = 1
