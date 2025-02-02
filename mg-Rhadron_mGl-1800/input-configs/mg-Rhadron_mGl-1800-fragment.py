@@ -27,26 +27,26 @@ generator = cms.EDFilter("Pythia8HadronizerFilter",
       'JetMatching:setMad = off',
       
       # Scheme and Usage
-      #'JetMatching:scheme = 1',
-      #'JetMatching:merge = off',
+      'JetMatching:scheme = 1',
+      'JetMatching:merge = off',
       
       # Jet algorithm
-      #'JetMatching:jetAlgorithm = 2',
-      #'JetMatching:slowJetPower = 1', 
+      'JetMatching:jetAlgorithm = 2',
+      'JetMatching:slowJetPower = 1', 
       
       # Merging parameters
-      #'JetMatching:etaJetMax = 5.',
-      #'JetMatching:eTjetMin = 30', # should match qCut
-      #'JetMatching:coneRadius = .7', # changed from 1 to .7
+      'JetMatching:etaJetMax = 5.',
+      'JetMatching:eTjetMin = 30', 
+      'JetMatching:coneRadius = .7', 
       
       # Exclusive mode
-      #'JetMatching:nJetMax = 2', # number of partons in born matrix element for highest multiplicity
+      'JetMatching:nJetMax = 2', 
 
       # Madgraph specific parameters
-      #'JetMatching:doShowerKt = off', # off for MLM matching, turn on for shower-kT matching
-      #'JetMatching:qCut = 30', # Should match xQcut def in MG run card
-      #'JetMatching:nQmatch = 5', # 4 corresponds to 4-flavour scheme (no matching of b-quarks), 5 for 5-flavour scheme
-      
+      'JetMatching:doShowerKt = off', 
+      'JetMatching:qCut = 30', 
+      'JetMatching:nQmatch = 5', 
+    
       #6:m0 = 172.5',
       #'24:mMin = 7',
       #'Check:abortIfVeto = on',
@@ -70,7 +70,7 @@ generator = cms.EDFilter("Pythia8HadronizerFilter",
       'Init:showChangedSettings = on',  # Show all settings that differ from the default
       'Init:showAllSettings = on',  # Show all settings
       'Next:numberCount = 100',  # Print event info every 100 events
-      'Next:numberShowInfo = 5',  # Print initialization info for first 5 events
+      'Next:numberShowInfo = 1',  # Print initialization info for first 5 events
       'Next:numberShowProcess = 5',  # Print process-level info for first 5 events
       'Next:numberShowEvent = 5',  # Print event-level info for first 5 events
     ),
